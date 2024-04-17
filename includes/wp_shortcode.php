@@ -27,11 +27,11 @@ function shortcode_documentos($atts)
 
       if ($tipo_documento === 'enlace') {
         // Mostrar enlace
-        echo '<a class="tipo-documento tipo-enlace" href="' . esc_url($enlace_documento) . '"><i aria-hidden="true" class="icon icon-link"></i> ' . esc_html($titulo_documento) . '</a>';
+        echo '<a class="tipo-documento tipo-enlace" href="' . esc_url($enlace_documento) . '" target="_blank"><i aria-hidden="true" class="icon icon-link"></i> ' . esc_html($titulo_documento) . '</a>';
       } elseif ($tipo_documento === 'cargar_archivo' && $archivo_pdf) {
         // Mostrar enlace al archivo cargado
         $url = $archivo_pdf['url'];
-        echo '<a class="tipo-documento tipo-url" href="' . esc_url($url) . '"><i aria-hidden="true" class="icon icon-document"></i> ' . esc_html($titulo_documento) . ' <i aria-hidden="true" class="icon icon-download"></i></a>';
+        echo '<a class="tipo-documento tipo-url" href="' . esc_url($url) . '" target="_blank"><i aria-hidden="true" class="icon icon-document"></i> ' . esc_html($titulo_documento) . ' <i aria-hidden="true" class="icon icon-download"></i></a>';
       }
 
       echo '</li>';

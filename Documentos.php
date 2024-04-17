@@ -7,7 +7,7 @@
  * Author URI: https://kncepto.com/
  * License: GNU General Public License v3.0
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
- * Text Domain: Document add shorcode Loteria Medellin
+ * Text Domain: Document add shorcode Loteria Medellin for yisus_dev
 */
 
 
